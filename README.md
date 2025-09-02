@@ -36,8 +36,8 @@ LineFollower-Maze/
 ├── src/                     # 程式碼
 │   ├── LineFollow.cpp       # 循跡控制 (P 控制)
 │   └── Maze.cpp             # 迷宮控制 (DMS + IR 撞牆偵測)
-├── images/                  # 專案照片  
+├── images/                  # 硬體照片  
 │   ├── robot1.jpg
 │   └── robot2.jpg
-├── README.md                # 專案說明文件
-├── LICENSE                  # 授權條款 (MIT)
+├── README.md                # 專案說明
+├── LICENSE                  # 授權條款
