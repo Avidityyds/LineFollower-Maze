@@ -1,18 +1,18 @@
 # Line Follower & Maze Robot (ATmega328P, AVR)
 
-這個專案收錄了微控制器期末專題「循跡＆走迷宮自走車」的程式：
+本專案收錄了微控制器期末專題「循跡＆走迷宮自走車」的程式：
 
 - `src/LineFollow.cpp` – 以左右 IR 感測器差值為誤差的 **P 控制循跡**  
 - `src/Maze.cpp` – **DMS（距離感測器）+ IR** 的撞牆偵測策略，沿牆前進、卡牆時自動倒退  
 
-▶️ Demo 影片： [YouTube Shorts](https://youtube.com/shorts/3_DuWfTLTRo?si=_PDdgESB-6ADxS3Z)
+▶️ Demo 影片：[YouTube Shorts](https://youtube.com/shorts/3_DuWfTLTRo?si=_PDdgESB-6ADxS3Z)
 
 ---
 
-## 硬體/環境
+## 硬體 / 環境
 - 微控制器：ATmega328P    
 - 開發工具：Microchip Studio (Atmel Studio)
-- N20 馬達 x2  
+- N20 馬達 ×2  
   負責驅動左右兩個輪子，提供小車的移動能力。
 
 - L298N 馬達驅動模組  
@@ -22,6 +22,22 @@
   - IR 感測器 × 2 (循跡)
   - DMS 距離感測器 × 1 + IR 感測器 × 1 (迷宮)
 
+  
+<p align="left">
+  <img src="images/robot1.jpg" height="250"/>
+  <img src="images/robot2.jpg" height="250"/>
+</p>
+
 ---
 
-
+## 📂 專案結構
+```text
+LineFollower-Maze/
+├── src/                     # 程式碼
+│   ├── LineFollow.cpp       # 循跡控制 (P 控制)
+│   └── Maze.cpp             # 迷宮控制 (DMS + IR 撞牆偵測)
+├── images/                  # 專案照片  
+│   ├── robot1.jpg
+│   └── robot2.jpg
+├── README.md                # 專案說明文件
+├── LICENSE                  # 授權條款 (MIT)
